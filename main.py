@@ -5,15 +5,15 @@ from login import login, crear_cuenta, comprobar_datos
 
 enemy_control = [
     Enemy("Grom", 16, 7, 3, 50, "orc", 2, 100, 200),
-    Enemy("Thrum", 16, 7, 3, 50, "orc", 2, 100, 200),
-    Enemy("Doomhammer", 16, 7, 3, 50, "orc", 2, 100, 200),
-    Enemy("Skullsplitter", 16, 7, 3, 50, "orc", 2, 100, 200),
-    Enemy("Gorrum", 16, 7, 3, 50, "orc", 2, 100, 200),
-    Enemy("Nagrand", 16, 7, 3, 50, "orc", 2, 100, 200),
-    Enemy("Lok amon", 16, 7, 3, 50, "orc", 2, 100, 200),
-    Enemy("Grombolar", 16, 7, 3, 50, "orc", 2, 100, 200),
-    Enemy("Grommash", 16, 7, 3, 50, "orc", 2, 100, 200),
-    Enemy("Dae'mon", 16, 7, 3, 50, "orc", 2, 100, 400)
+    Enemy("Thrum", 16, 7, 3, 50, "orc", 2, 200, 300),
+    Enemy("Doomhammer", 16, 7, 3, 50, "orc", 2, 300, 400),
+    Enemy("Skullsplitter", 16, 7, 3, 50, "orc", 2, 400, 500),
+    Enemy("Gorrum", 16, 7, 3, 50, "orc", 2, 500, 600),
+    Enemy("Nagrand", 16, 7, 3, 50, "orc", 2, 600, 700),
+    Enemy("Lok amon", 16, 7, 3, 50, "orc", 2, 700, 800),
+    Enemy("Grombolar", 16, 7, 3, 50, "orc", 2, 800, 900),
+    Enemy("Grommash", 16, 7, 3, 50, "orc", 2, 1000, 1200),
+    Enemy("Dae'mon", 16, 7, 3, 50, "orc", 2, 1200, 1300)
 ]
 character_control = []
 character_selected_for_combat = ''

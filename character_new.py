@@ -1,3 +1,5 @@
+from constants import *
+
 class Character:
     def __init__(self, name, age, strength, agi, con, race, damage):
         self.name = name
@@ -39,5 +41,5 @@ class Character:
             self.agi *= 1.1
             self.con *= 1.1
             self.damage = self.strength / 3
-            print(f"{self.name} Subio de nivel")
+            print(f"{self.name} has leveled up!")
             print(self.damage)

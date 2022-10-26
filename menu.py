@@ -1,45 +1,41 @@
 import random
 from character_new import Character
-
+from constants import *
 
 def select_amount_character():
     while True:
-        amount = int(input("How many characters do you want to add(max 3): "))
+        amount = int(input(CHAR_AMOU))
         if amount > 3 or amount <= 0:
-            print("Only 3 characters maximum allowed and it can't be 0")
+            print(CHAR_AMOUN_ERR)
         else:
             return amount
 
 
 def select_race():
     while True:
-        print(
-            "Enter the type of character you want to choose:\n "
-            " 1:Orc: You'll get 2 extra points in strength\n "
-            " 2:Elf: You'll get 2 extra points in agility\n "
-            " 3:Human: You'll get 2 extra points in constitution ")
-        race = int(input("your option: "))
+        print(TYPES_CHAR)
+        race = int(input(CHOICE))
         if race == 0 or race < 0 or race >= 4:
-            print("your option is not in the options")
+            print(CHOICE_ERR)
         else:
             break
-    name = str(input("Enter character name: "))
-    age = int(input("Enter character age:"))
-    print("the sum of strength, life and agility must give 15 and none can be worth 0")
+    name = str(input(CHAR_NAME))
+    age = int(input(CHAR_AGE))
+    print(SUM_ATTRIBS)
     sum = 0
     while sum != 15:
-        strength = int(input("Enter character strength :"))
+        strength = int(input(CHAR_STR))
         sum_1 = 15 - strength
-        print("you have", sum_1, "available values left")
-        agi = int(input("Enter character agi :"))
+        print(YOU_HAVE, sum_1, POINTS_LEFT)
+        agi = int(input(CHAR_AGI))
         sum_1 = 15 - (strength + agi)
-        print("you have", sum_1, "available values left")
-        con = int(input("Enter character con:"))
+        print(YOU_HAVE, sum_1, POINTS_LEFT)
+        con = int(input(CHAR_CONS))
         sum = strength + agi + con
         if sum == 15:
             break
         else:
-            print("THE SUM OF THE VALUES IS NOT 15, ENTER THE VALUES AGAIN")
+            print(SUM_ERR)
 
     if race == 1:
         strength = strength + 2
